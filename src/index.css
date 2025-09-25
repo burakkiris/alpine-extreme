@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Alpine Extreme Park Design System - Nature-inspired adventure theme */
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 210 15% 15%;
+
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 15%;
+
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 15%;
+
+    /* Primary - Forest Green */
+    --primary: 140 60% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 140 45% 35%;
+
+    /* Secondary - Sky Blue */
+    --secondary: 200 85% 55%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Muted - Mountain Gray */
+    --muted: 210 12% 94%;
+    --muted-foreground: 210 15% 45%;
+
+    /* Accent - Adrenaline Orange */
+    --accent: 25 90% 55%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Destructive colors */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Border and input */
+    --border: 210 20% 85%;
+    --input: 210 20% 90%;
+    --ring: 140 60% 25%;
+
+    /* Border radius */
+    --radius: 0.75rem;
+
+    /* Adventure gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(140 60% 25%), hsl(200 85% 45%));
+    --gradient-accent: linear-gradient(45deg, hsl(25 90% 55%), hsl(15 85% 60%));
+    --gradient-mountain: linear-gradient(180deg, hsl(200 60% 70%), hsl(210 40% 85%));
+
+    /* Shadows */
+    --shadow-adventure: 0 20px 60px -15px hsl(140 60% 25% / 0.3);
+    --shadow-glow: 0 0 30px hsl(25 90% 55% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Sidebar (keeping defaults for now) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold;
+  }
+}
+
+@layer components {
+  /* Adventure-themed component styles */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .accent-gradient {
+    background: var(--gradient-accent);
+  }
+  
+  .mountain-gradient {
+    background: var(--gradient-mountain);
+  }
+  
+  .adventure-shadow {
+    box-shadow: var(--shadow-adventure);
+  }
+  
+  .glow-shadow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .smooth-transition {
+    transition: var(--transition-smooth);
+  }
+  
+  .bounce-transition {
+    transition: var(--transition-bounce);
+  }
+
+  /* Parallax scroll effect */
+  .parallax {
+    transform: translateZ(0);
+  }
+  
+  /* Activity card hover effects */
+  .activity-card {
+    @apply smooth-transition hover:scale-105 hover:adventure-shadow;
+  }
+}
