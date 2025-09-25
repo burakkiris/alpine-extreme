@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 
-const PHONE_DISPLAY = "0532 366 1316";
-const PHONE_TEL = "tel:+905323661316"; // arama için
-const WHATSAPP_URL = "https://wa.me/905323661316"; // WhatsApp direkt mesaj
+const PHONE_DISPLAY = "0501 017 0055";
+const PHONE_TEL = "tel:+905010170055"; // arama için
+const WHATSAPP_URL = "https://wa.me/905010170055"; // WhatsApp direkt mesaj
 const EMAIL = "alpine.extremepark@gmail.com";
 const INSTAGRAM_URL = "https://instagram.com/alpineextremepark";
 const ADDRESS = `Alpine Extreme Park Alanlı, 55200 Atakum / Samsun`;
