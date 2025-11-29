@@ -17,18 +17,18 @@ const ContactSection = () => {
             Maceraya Hazır mısınız?
           </h2>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            Alpine Extreme Park ekibimizle iletişime geçin; sorularınızı yanıtlayalım, 
+            Alpine Extreme Park ekibimizle iletişime geçin; sorularınızı yanıtlayalım,
             size en uygun açık hava deneyimini birlikte planlayalım.
           </p>
           <div className="w-24 h-1 bg-accent mx-auto mt-8 rounded-full" />
         </div>
-        
+
         <div className="grid lg:grid-cols-2 gap-12">
           {/* İletişim Bilgileri */}
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-montserrat font-bold mb-6">İletişim</h3>
-              
+
               <div className="space-y-6">
                 {/* Telefon */}
                 <div className="flex items-center gap-4">
@@ -44,7 +44,7 @@ const ContactSection = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* E-posta */}
                 <div className="flex items-center gap-4">
                   <div className="bg-accent text-accent-foreground p-3 rounded-full" aria-hidden>
@@ -59,7 +59,7 @@ const ContactSection = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Adres */}
                 <div className="flex items-center gap-4">
                   <div className="bg-accent text-accent-foreground p-3 rounded-full" aria-hidden>
@@ -74,16 +74,16 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Hızlı Aksiyonlar */}
             <div className="space-y-4">
               <h4 className="text-lg font-montserrat font-semibold">Hızlı Bağlantılar</h4>
-              
+
               <div className="flex flex-col sm:flex-row gap-3">
                 {/* Hemen Ara */}
-                <Button 
+                <Button
                   asChild
-                  variant="secondary" 
+                  variant="secondary"
                   className="flex-1 bg-white/20 border-white/30 text-white hover:bg-white hover:text-primary"
                 >
                   <a href={PHONE_TEL} aria-label="Hemen Ara">
@@ -92,7 +92,7 @@ const ContactSection = () => {
                 </Button>
 
                 {/* WhatsApp */}
-                <Button 
+                <Button
                   asChild
                   variant="secondary"
                   className="flex-1 bg-green-500 border-green-500 text-white hover:bg-green-600"
@@ -104,17 +104,17 @@ const ContactSection = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Sosyal Medya & Çalışma Saatleri */}
           <div className="space-y-8">
             {/* Sosyal */}
             <div>
               <h3 className="text-2xl font-montserrat font-bold mb-6">Bizi Takip Edin</h3>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                <Button 
+                <Button
                   asChild
-                  variant="outline" 
+                  variant="outline"
                   className="bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary justify-start"
                 >
                   <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -122,25 +122,25 @@ const ContactSection = () => {
                   </a>
                 </Button>
               </div>
-              
+
               <p className="text-sm opacity-75">
                 Günlük paylaşımlar, güvenlik ipuçları ve etkinlik duyuruları için Instagram’da takip edin.
               </p>
             </div>
-            
+
             {/* Çalışma Saatleri */}
             <div className="bg-white/10 rounded-xl p-6">
               <h4 className="text-lg font-montserrat font-semibold mb-4">Çalışma Saatleri</h4>
-              
+
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span>Pazartesi: 10:00 – 22:00<br />
-                    Salı: 10:00 – 22:00<br />
-                    Çarşamba: 10:00 – 22:00<br />
-                    Perşembe: 10:00 – 22:00<br />
-                    Cuma: 10:00 – 22:00<br />
-                    Cumartesi: 10:00 – 22:00<br />
-                    Pazar: 10:00 – 22:00</span>
+                  <span>Pazartesi: 10:00 – 19:00<br />
+                    Salı: 10:00 – 19:00<br />
+                    Çarşamba: 10:00 – 19:00<br />
+                    Perşembe: 10:00 – 19:00<br />
+                    Cuma: 10:00 – 19:00<br />
+                    Cumartesi: 10:00 – 19:00<br />
+                    Pazar: 10:00 – 19:00</span>
                 </div>
               </div>
             </div>
