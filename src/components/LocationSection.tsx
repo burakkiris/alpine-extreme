@@ -15,7 +15,7 @@ const LocationSection = () => {
               Maceranı Bul
             </h2>
             <div className="w-24 h-1 accent-gradient mb-8 rounded-full" />
-            
+
             <div className="space-y-6">
               {/* Adres */}
               <div className="flex items-start gap-4">
@@ -30,7 +30,7 @@ const LocationSection = () => {
                   </p>
                 </div>
               </div>
-              
+
               {/* Nasıl Ulaşılır */}
               <div className="flex items-start gap-4">
                 <div className="bg-secondary text-secondary-foreground p-3 rounded-full">
@@ -44,7 +44,7 @@ const LocationSection = () => {
                   </p>
                 </div>
               </div>
-              
+
               {/* Çalışma Saatleri */}
               <div className="flex items-start gap-4">
                 <div className="bg-primary text-primary-foreground p-3 rounded-full">
@@ -53,18 +53,18 @@ const LocationSection = () => {
                 <div>
                   <h3 className="font-montserrat font-semibold text-lg mb-2">Çalışma Saatleri</h3>
                   <p className="text-muted-foreground">
-                    Pazartesi: 10:00 – 22:00<br />
-                    Salı: 10:00 – 22:00<br />
-                    Çarşamba: 10:00 – 22:00<br />
-                    Perşembe: 10:00 – 22:00<br />
-                    Cuma: 10:00 – 22:00<br />
-                    Cumartesi: 10:00 – 22:00<br />
-                    Pazar: 10:00 – 22:00
+                    Pazartesi: 10:00 – 19:00<br />
+                    Salı: 10:00 – 19:00<br />
+                    Çarşamba: 10:00 – 19:00<br />
+                    Perşembe: 10:00 – 19:00<br />
+                    Cuma: 10:00 – 19:00<br />
+                    Cumartesi: 10:00 – 19:00<br />
+                    Pazar: 10:00 – 19:00
                   </p>
                 </div>
               </div>
             </div>
-            
+
             {/* Butonlar */}
             <div className="mt-8 space-y-4">
               <Button asChild variant="adventure" size="lg" className="w-full sm:w-auto">
@@ -93,7 +93,7 @@ const LocationSection = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Harita Embed */}
           <div className="relative">
             <div className="rounded-xl overflow-hidden adventure-shadow">
